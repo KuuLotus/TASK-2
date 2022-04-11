@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!--<header><strong>BOOKERS</strong></header>-->
+    <!--<nav>-->
+      <!--<ul class="nav-list">-->
+        <!--<li class="nav-list-item"><strong><%=link_to"Top",model:Book,url:"/"%></strong></li>-->
+        <!--<li class="nav-list-item"><strong>List</strong></li>-->
+        <!--<li class="nav-list-item"><strong>Create</strong></li>-->
+      <!--</ul>-->
+    <!--</nav>-->
+    <P class="notice"><%=flash[:notice]%></P>
+    <%= yield %>
+  </body>
+</html>
